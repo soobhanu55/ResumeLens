@@ -1,14 +1,14 @@
-# DE RAG Enterprise CV Analysis System 🚀
+# DE RAG Enterprise CV Analysis System
 
 Production-ready RAG system for German CV analysis - Upload CVs → Semantic search → LLM insights. Built for enterprise HR workflows with evaluation metrics and cloud deployment.
 
-## 🎬 Demo
+## Demo
 
 ![Demo](docs/demo_ui.gif)
 
 Real interaction against the running app (no API key needed for this part): a synthetic German CV (`Anna Schmidt, Data Scientist`) is uploaded and processed, a semantic search query in German ("Python und Machine Learning Erfahrung") is run against it, and the expanded result shows the actual retrieved chunk with a genuine cosine-similarity score (0.1149) and the parser's structured extraction (name, email, skills, experience). Embeddings and retrieval run locally via `SentenceTransformers` + `FAISS` — only the downstream "AI Analysis" tab (LLM-generated answers) needs an OpenAI key, which isn't exercised here.
 
-## ✨ Features
+## Features
 
 - **Multi-format CV parsing** (PDF, DOCX) with German language support
 - **Advanced RAG pipeline**: Semantic chunking → Hybrid vector search → OpenAI LLM synthesis
@@ -17,7 +17,7 @@ Real interaction against the running app (no API key needed for this part): a sy
 - **Production deployment**: Streamlit Cloud + memory-optimized lightweight mode
 - **Evaluation dashboard**: Monitor retrieval quality and performance metrics
 
-## 🛠 Tech Stack
+## Tech Stack
 Frontend: Streamlit
 RAG: SentenceTransformers + FAISS + OpenAI GPT
 Parsing: PyPDF2 + python-docx
@@ -25,7 +25,7 @@ Backend: Modular FastAPI-style patterns
 Deployment: Streamlit Cloud + GitHub
 Evaluation: Custom precision/latency/cost tracking
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone & Install
 ```bash
