@@ -1,4 +1,4 @@
-# DE RAG Enterprise CV Analysis System
+# DE RAG Enterprise CV Analysis System 
  
 Production-ready RAG system for German CV analysis - Upload CVs → Semantic search → LLM insights. Built for enterprise HR workflows with evaluation metrics and cloud deployment.
 
